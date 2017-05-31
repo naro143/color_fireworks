@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <ons-navigator id="navigator" page="page1.html"></ons-navigator>
+  
+  <ons-template id="page1.html">
+    <ons-page id="first-page">
+      <ons-toolbar>
+        <div class="left"><ons-toolbar-button>戻る</ons-toolbar-button></div>
+      </ons-toolbar>
+
+      <div class="content" id="title" style="text-align: center">
+        <h1><img src="images/title.png"></h1>
+        <div id="difficulty-wrap">
+          <ons-button class="difficulty"  id="push-button-easy"><img src="images/easy_noFrame.png"></ons-button>
+          <ons-button class="difficulty"  id="push-button-nomal"><img src="images/normal_noFrame.png"></ons-button>
+          <ons-button class="difficulty"  id="push-button-hard"><img src="images/hard_noFrame.png"></ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+  
+  <ons-template id="page2.html">
+    <ons-page id="second-page">
+      <ons-toolbar>
+     　 <div class="center"><img src="images/kayaku.png"></div>
+        <div class="left"><ons-back-button>戻る</ons-back-button></div>
+      </ons-toolbar>
+
+      <div class="content" id="inputRGB" style="text-align: center">
+        <div class="tap_wrap"><img  class="tap" src="images/tap.png"></div>
+        <ons-button id="push-button-firing"><div id="target"></div></ons-button>
+        <ons-button id="push-button-rule"></ons-button>
+        <div class="color_button_warp">
+          <ons-button class="color_button" id="push-button-r"><img id="r_bg"  src="images/red.png"></ons-button>
+          <ons-button class="color_button" id="push-button-g"><img id="g_bg"  src="images/green.png"></ons-button>
+          <ons-button class="color_button" id="push-button-b"><img id="b_bg"  src="images/blue.png"></ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
+  
+  <ons-template id="page3.html">
+    <ons-page id="third-page">
+      <ons-toolbar>
+        <div class="center"><img src="images/age.png"></div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <canvas id="hanabi"></canvas>
+      </div>
+    </ons-page>
+  </ons-template>
+  
+  <ons-template id="page4.html">
+    <ons-page id="fourth-page">
+      <ons-toolbar>
+        <div class="center"><img src="images/result.png"></div>
+      </ons-toolbar>
+
+      <div class="content" id="result_page" style="text-align: center">
+        <div id="result"></div>
+        <div id="color_code_area">
+          <div class="color_code_area_herf">
+          　<img src="images/Que_Code.png">
+            <div id="target-color-code"></div>
+          </div>
+          <div class="color_code_area_herf">
+            <img src="images/Your_Code.png">
+            <div id="user-color-code"></div>
+          </div>
+        </div>
+        <ons-button id="push-button-toTitle"><img src="images/title_name.png"></ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+  
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script type="text/javascript" src="js/hanabi.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

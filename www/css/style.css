@@ -1,0 +1,226 @@
+/**/
+
+* {
+   text-shadow: none;    
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+canvas {
+  padding: 0;
+  margin: 0;
+}
+
+ons-toolbar {
+    background-image: url(../images/head_bg.jpg) !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+
+.center img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#title {
+    background-image: url(../images/bg.png) !important;
+    background-size: cover !important;
+    
+}
+
+#inputRGB {
+    background-image: url(../images/Game_BG.png) !important;
+    background-size: cover !important;
+}
+
+.succes{
+    background-image: url(../images/sc_bg.png) !important;
+    background-size: cover !important;
+}
+
+.falut {
+    background-image: url(../images/def_bg.jpg) !important;
+    background-size: cover !important;
+}
+
+h1 {
+    height: 20%;
+    margin-top: 10%!important;
+    margin-bottom: 30%!important;
+}
+
+h1 img{
+    height: 100%;
+}
+
+#difficulty-wrap {
+    height: 40%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.difficulty {
+    height: 28%;
+    margin-bottom: 5%;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    width: 70%;
+    background-color: rgba(0,0,0,0.0)!important;
+}
+
+.difficulty img{
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    padding: 2% 0;
+}
+
+.tap_wrap {
+    margin: 10px auto;
+}
+
+.tap {
+    width: 20%;
+    position: absolute
+    top: 0;
+  　left: 50%;
+  　transform: translate(0, -50%);
+    
+}
+
+#push-button-rule {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    height: 15%;
+    background-color: rgba(0,0,0,0)!important;
+    border-radius: 50%; 
+    background: url(../images/Rule_Icon.png);
+    background-size: cover !important;
+}
+
+#push-button-firing {
+    margin: 0 auto ;
+    margin-bottom: 10%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: rgba(128,128,128,0.5);
+    
+}
+
+#target {
+    margin: 0 auto;
+}
+
+.color_button_warp {
+    width: 80%;
+    height: 40%;
+    margin: 0 auto ;
+    margin-bottom: 10px; 
+    position: relative;
+}
+
+.color_button {
+    //width: 40%;
+    height: 50%;
+    background-color: rgba(0,0,0,0)!important;
+    position: relative;
+}
+
+.color_button img {
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#push-button-r {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#push-button-g {
+    position: absolute; 
+    left: 50%;
+    bottom: 0;
+    transform: translate(-125%, 0%);
+}
+
+#push-button-b {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(25%, 0%);
+}
+
+#result {
+    margin: 10% auto;
+    height: 20%;
+}
+
+#result img {
+    height: 100%;
+    width: auto;
+}
+
+#color_code_area {
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5) !important;
+    border-radius: 10px;
+}
+
+
+#color_code_area img {
+    width: 80% ;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.color_code_area_herf {
+    height: 50%;
+    width: 100%; 
+}
+
+#target-color-code{
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 15vw;
+}
+#user-color-code{
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 15vw;
+}
+
+
+#push-button-toTitle {
+    height: 10%;
+    margin-top: 10%;
+    background-color: rgba(0,0,0,0.0)!important;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    width: 70%;
+}
+
+#push-button-toTitle img{
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    padding: 2% 0;
+}
+
